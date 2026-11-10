@@ -1,0 +1,16 @@
+{
+  "name": "hvac-quote-benchmark",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "demo": "npm run build && node demo.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
